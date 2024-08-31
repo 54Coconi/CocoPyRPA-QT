@@ -1,3 +1,5 @@
+![logo](https://github.com/54Coconi/picture-repo/blob/main/img/logo.png)
+
 # CocoPyRPA-QT
 
 基于PyAutoGUI和PyQt5开发的CocoPyRPA的GUI版本，开箱即用，无需任何配置
