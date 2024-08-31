@@ -1,0 +1,260 @@
+QMenu {
+    background-color: white;
+    margin: 2px; /* 菜单周围的一些间距 */
+}
+
+QMenu::item {
+    padding: 2px 25px 2px 20px;
+    border: 1px solid transparent; /* 为选择边框预留空间 */
+}
+
+QMenu::item:selected {
+    border-color: darkblue;
+    background: rgba(100, 100, 100, 150);
+}
+
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+    background: gray;
+    border: 1px inset gray;
+
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+
+QMenu::separator {
+    height: 2px;
+    background: lightblue;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+QMenu::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+/* non-exclusive indicator = check box style indicator (see QActionGroup::setExclusive) */
+QMenu::indicator:non-exclusive:unchecked {
+    image: url(:/images/checkbox_unchecked.png);
+}
+
+QMenu::indicator:non-exclusive:unchecked:selected {
+    image: url(:/images/checkbox_unchecked_hover.png);
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(:/images/checkbox_checked.png);
+}
+
+QMenu::indicator:non-exclusive:checked:selected {
+    image: url(:/images/checkbox_checked_hover.png);
+}
+
+/* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
+QMenu::indicator:exclusive:unchecked {
+    image: url(:/images/radiobutton_unchecked.png);
+}
+
+QMenu::indicator:exclusive:unchecked:selected {
+    image: url(:/images/radiobutton_unchecked_hover.png);
+}
+
+QMenu::indicator:exclusive:checked {
+    image: url(:/images/radiobutton_checked.png);
+}
+
+QMenu::indicator:exclusive:checked:selected {
+    image: url(:/images/radiobutton_checked_hover.png);
+}
+
+/* ================================ 菜单栏 ================================ */
+
+QMenuBar {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 lightgray, stop:1 darkgray);
+    spacing: 3px; /* 菜单栏项目之间的间距 */
+}
+
+QMenuBar::item {
+    padding: 1px 4px;
+    background: transparent;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected { /*当使用鼠标或键盘选择时*/
+    background: #a8a8a8;
+}
+
+QMenuBar::item:pressed {
+    background: #888888;
+}
+
+/* ================================ 工具栏 ================================ */
+
+QToolBar {
+    border: 0px solid rgba(206,34,34,255);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 rgba(149,242,247,50), stop:1 rgba(139,216,247,200));
+    spacing: 3px; /* 工具栏中项目之间的间距 */
+}
+
+QToolBar::handle {
+    image: url(handle.png);
+}
+
+/* ================================ 任务列表 ================================ */
+
+QListView {
+    background-color: rgb(108,214,188);
+/*    alternate-background-color: ;*/
+    show-decoration-selected: 1; /* 使选择范围跨越视图的整个宽度 */
+
+}
+
+QListView::item:alternate {
+    background: #EEEEEE;
+}
+
+QListView::item:selected {
+    border: 0px solid #6a6ea9;
+}
+
+QListView::item:selected:!active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #ABAFE5, stop: 1 #8588B2);
+}
+
+QListView::item:selected:active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #6a6ea9, stop: 1 #888dd9);
+}
+
+QListView::item:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);
+}
+
+/* ==============================  日志浏览器  ============================== */
+
+QTextBrowser {
+    background-color: rgb(95,95,103);
+/*    background-image: url(draft.png);*/
+    background-attachment: scroll;
+}
+
+/* ===============================  指令列表  =============================== */
+
+QTableView {
+    background-color: rgba(247,229,147,100);
+}
+
+/* ============================== 工具提示信息 ============================== */
+
+QToolTip {
+    border: 3px solid darkkhaki;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 200;
+}
+
+/* ============================== frame_list对象样式 ============================== */
+
+QFrame#frame_list {
+    border: 3px solid rgb(49,178,147);
+    border-radius: 5px;
+    padding: 0px;
+    /* background-image: url(../../res/); */
+}
+
+/*  frame_log  */
+
+QFrame#frame_log {
+    border: 3px solid rgb(62,62,64);
+    border-radius: 5px;
+    padding: 0px;
+    /* background-image: url(../../res/); */
+}
+
+/*  frame_table  */
+
+QFrame#frame_table {
+    border: 3px solid rgb(232,201,77);
+    border-radius: 5px;
+    padding: 0px;
+    /* background-image: url(../../res/); */
+}
+
+/* ================================  按钮  ================================ */
+
+QPushButton {
+    border: 2px solid rgba(144,144,144,250);
+    border-radius: 5px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+    min-width: 50px;
+    font-size: 18px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+
+QPushButton:flat {
+    border: none; /* 扁平按钮没有边框 */
+}
+
+QPushButton:default {
+    border-color: navy; /* 使默认按钮突出显示 */
+}
+
+QPushButton:open { /* 当按钮的菜单打开时 */
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+
+QPushButton::menu-indicator {
+    image: url(menu_indicator.png);
+    subcontrol-origin: padding;
+    subcontrol-position: bottom right;
+}
+
+QPushButton::menu-indicator:pressed, QPushButton::menu-indicator:open {
+    position: relative;
+    top: 2px; left: 2px; /* 将箭头移动 2 像素 */
+}
+
+/* ================================ 行输入框 ================================ */
+
+QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: rgb(240,240,121);
+    selection-background-color: darkgray;
+}
+
+QLineEdit[echoMode="2"] {
+    lineedit-password-character: 9679;
+}
+
+QLineEdit:read-only {
+    background: lightblue;
+}
+
+/* ================================ 对话窗口 ================================ */
+
+QDialog {
+    background-color: rgba(26,44,62,80);
+    border: none /* 无边框 */
+
+}
+
+/* ================================ 标签 ================================ */
+
+QLabel {
+    font-size: 18px;
+    color: rgb(255,255,131)
+}

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PyRPACode>
+    <Action Order="序号" OperationType="操作类型" FunctionCmd="功能指令" Content="实例对象" Loop="循环次数"
+            ErrorLoop="容错次数" Desc="备注" Src="图片路径" IsRun="是否启用"/>
+</PyRPACode>

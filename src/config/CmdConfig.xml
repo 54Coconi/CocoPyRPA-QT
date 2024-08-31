@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CMD MenuItemName="m_menuItem_CMD_"><Item Order="1" Key="记事本" Value="start /max notepad" Desc="打开记事本" /><Item Order="2" Key="计算器" Value="calc" Desc="打开计算器" /><Item Order="3" Key="资源管理器" Value="explorer" Desc="打开资源管理器" /><Item Order="4" Key="谷歌浏览器" Value="start /max chrome.exe " Desc="打开谷歌浏览器" /><Item Order="5" Key="锁屏" Value="rundll32.exe user32.dll,LockWorkStation" Desc="桌面锁屏" /><Item Order="6" Key="1" Value="1" Desc="1" /></CMD>

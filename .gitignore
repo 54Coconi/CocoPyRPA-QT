@@ -1,0 +1,12 @@
+/.idea/
+/.vscode/
+/build/
+/dist/
+**/__pycache__/
+**/.pytest_cache/
+
+# 忽略图片
+/work/IMAGES/*.jpeg
+/work/IMAGES/*.jpg
+/work/IMAGES/*.png
+

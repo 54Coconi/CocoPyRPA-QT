@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PyRPACode>
+    <Action Order="1" OperationType="cmd指令" Type="记事本" Content="start notepad" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="" Desc="打开记事本" />
+    <Action Order="2" OperationType="系统" Type="延时" Content="5" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="" Desc="等待5秒" />
+    <Action Order="3" OperationType="键盘" Type="按键" Content="shift" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="" Desc="切换输入法" />
+    <Action Order="4" OperationType="键盘" Type="键盘输入TXT内容" Content="work\TASKS\2键盘输入TXT内容测试\text.txt" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="5,5" Desc="无" />
+    <Action Order="5" OperationType="键盘" Type="按键" Content="enter" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="" Desc="关闭窗口" />
+    <Action Order="6" OperationType="系统" Type="延时" Content="1" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="" Desc="无" />
+    <Action Order="7" OperationType="键盘" Type="热键组合" Content="alt+f4" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="" Desc="关闭窗口" />
+    <Action Order="8" OperationType="系统" Type="延时" Content="1" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="" Desc="无" />
+    <Action Order="9" OperationType="键盘" Type="按键" Content="n" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="" Desc="不保存" />
+</PyRPACode>

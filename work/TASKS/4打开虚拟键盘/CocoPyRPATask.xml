@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PyRPACode><Action Order="1" OperationType="鼠标" Type="鼠标定点移动" Content="(1096, 1079)" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="目标行,重复次数" Desc="无" /><Action Order="2" OperationType="鼠标" Type="单击左键" Content="图片" Loop="1" ErrorLoop="1000" Src="G:\CocoPyRPA_QT\CocoPyRPA-QT\work\IMAGES\IMAGE_2023-12-23-151357.png" IsRun="1" MultipleLineRepeat="目标行,重复次数" Desc="无" /><Action Order="3" OperationType="系统" Type="延时" Content="1" Loop="1" ErrorLoop="1" Src="无" IsRun="1" MultipleLineRepeat="目标行,重复次数" Desc="无" /></PyRPACode>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #212121;
+            font-family: 'Verdana', sans-serif;
+            margin: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            /* 文本水平居中 */
+            text-align: center;
+            color: #3eb1fd;
+        }
+
+        h3 {
+            color: #2aece2;
+            font-family: 'Arial', sans-serif;
+        }
+
+        p {
+            color: #f2f2f2;
+        }
+
+        table {
+            background-color: #000000;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            color: #f18d8d;
+            border: 1px solid #f3d7d7;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3d424c;
+        }
+
+        td {
+            background-color: #000000;
+        }
+    </style>
+  <title>功能说明</title>
+</head>
+<body>
+    <p>欢迎使用CocoPyRPA桌面自动化程序，以下是一些主要功能及说明：</p>
+    <h2>指令功能说明</h2>
+        <h3>鼠标类指令</h3>
+        <table>
+            <tr>
+                <th>操作</th>
+                <th>快捷键</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>单击左键</td>
+                <td>Ctrl+1</td>
+                <td>模拟鼠标单击左键</td>
+            </tr>
+            <tr>
+                <td>双击左键</td>
+                <td>Ctrl+2</td>
+                <td>模拟鼠标双击左键</td>
+            </tr>
+            <tr>
+                <td>单击右键</td>
+                <td>Ctrl+3</td>
+                <td>模拟鼠标单击右键</td>
+            </tr>
+            <tr>
+                <td>滚轮</td>
+                <td>Ctrl+4</td>
+                <td>模拟鼠标滚轮</td>
+            </tr>
+            <tr>
+                <td>鼠标定点移动</td>
+                <td>Ctrl+5</td>
+                <td>鼠标移动至屏幕指定坐标处</td>
+            </tr>
+            <tr>
+                <td>鼠标相对移动</td>
+                <td>Ctrl+6</td>
+                <td>鼠标相对当前位置移动指定坐标值</td>
+            </tr>
+        </table>
+
+        <h3>键盘类指令</h3>
+        <table>
+            <tr>
+                <th>操作</th>
+                <th>快捷键</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>按键</td>
+                <td>无</td>
+                <td>模拟键盘单个按键按下与释放</td>
+            </tr>
+            <tr>
+                <td>热键组合</td>
+                <td>无</td>
+                <td>模拟键盘热键组合如（Ctrl-C）</td>
+            </tr>
+            <tr>
+                <td>键盘输入TXT内容</td>
+                <td>无</td>
+                <td>获取TXT文本内容，对内容中的每个字符执行键盘按键按下，然后释放</td>
+            </tr>
+        </table>
+
+        <h3>系统类指令</h3>
+        <table>
+            <tr>
+                <th>操作</th>
+                <th>快捷键</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>延时</td>
+                <td>无</td>
+                <td>指令执行等待时间（秒）</td>
+            </tr>
+            <tr>
+                <td>定时</td>
+                <td>无</td>
+                <td>到指定时刻开始执行（暂时禁用）</td>
+            </tr>
+        </table>
+
+        <h3>cmd指令</h3>
+        <table>
+            <tr>
+                <th>操作</th>
+                <th>快捷键</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>自定义cmd指令</td>
+                <td>无</td>
+                <td>打开cmd指令编辑器</td>
+            </tr>
+            <tr>
+                <td>(自定义内容)...</td>
+                <td>无</td>
+                <td>(自定义内容)...</td>
+            </tr>
+        </table>
+
+        <h3>其它类指令</h3>
+        <table>
+            <tr>
+                <th>操作</th>
+                <th>快捷键</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>输入</td>
+                <td>无</td>
+                <td>复制指令表对象内容粘贴</td>
+            </tr>
+        </table>
+
+    <h2>菜单项、工具项说明</h2>
+    <table>
+        <tr>
+            <th>操作</th>
+            <th>快捷键</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td>新建任务</td>
+            <td>Ctrl+N</td>
+            <td>新建任务目录</td>
+        </tr>
+        <tr>
+            <td>打开</td>
+            <td>Ctrl+O</td>
+            <td>打开任务目录</td>
+        </tr>
+        <tr>
+            <td>保存</td>
+            <td>Ctrl+S</td>
+            <td>保存当前指令列表到选中的任务目录（注意：若未选中任何任务则默认保存到第一个任务）</td>
+        </tr>
+        <tr>
+            <td>另存为 Excel 表格</td>
+            <td>无</td>
+            <td>将当前表格内指令保存到选中的任务目录下的同名Excel表内（注意：若未选中任何任务则默认保存到第一个任务）</td>
+        </tr>
+        <tr>
+            <td>加载 Excel 数据</td>
+            <td>无</td>
+            <td>加载选中的任务目录下同名Excel表格数据（注意：若未选中任何任务则默认加载第一个任务下的同名Excel表）</td>
+        </tr>
+        <tr>
+            <td>运行一次</td>
+            <td>Ctrl+Shift+F5</td>
+            <td>将当前窗口表格内的所有（启用的）指令执行一次（注意：运行不会保存指令，可作为案例临时测试）</td>
+        </tr>
+        <tr>
+            <td>指定运行</td>
+            <td>Ctrl+Shift+F6</td>
+            <td>将当前窗口表格内选中的（已启用）指令执行一次（注意：运行不会保存指令，可作为单个指令测试）</td>
+        </tr>
+        <tr>
+            <td>复制</td>
+            <td>Ctrl+Shift+C</td>
+            <td>复制选中的一行指令</td>
+        </tr>
+        <tr>
+            <td>粘贴</td>
+            <td>Ctrl+Shift+V</td>
+            <td>粘贴一行指令到选中的行（会覆盖当前行内容）</td>
+        </tr>
+        <tr>
+            <td>删除</td>
+            <td>Delete</td>
+            <td>删除选中的一行指令</td>
+        </tr>
+        <tr>
+            <td>增加</td>
+            <td>无</td>
+            <td>在最后增加一行空白指令</td>
+        </tr>
+        <tr>
+            <td>插入上方</td>
+            <td>无</td>
+            <td>在选中的一行上方插入一行空白指令</td>
+        </tr>
+        <tr>
+            <td>插入下方</td>
+            <td>无</td>
+            <td>在选中的一行下方插入一行空白指令</td>
+        </tr>
+        <tr>
+            <td>上移</td>
+            <td>up（上方向键）</td>
+            <td>将当前选中的一行指令上移</td>
+        </tr>
+        <tr>
+            <td>下移</td>
+            <td>down（下方向键）</td>
+            <td>将当前选中的一行指令下移</td>
+        </tr>
+        <tr>
+            <td>截图</td>
+            <td>无</td>
+            <td>将屏幕上需要点击的区域截图（图片保存在work/IMAGES文件夹下）</td>
+        </tr>
+    </table>
+
+    <h2>其它说明</h2>
+    <p>指令 &lt;按键&gt;、&lt;热键组合&gt;支持的按键参数为：</p>
+
+     <table>
+    <tr>
+      <td>'\t'</td>
+      <td>'\n'</td>
+      <td>'\r'</td>
+      <td>' '</td>
+      <td>'!'</td>
+      <td>'"'</td>
+      <td>'#'</td>
+      <td>'$'</td>
+      <td>'%'</td>
+      <td>'&'</td>
+    </tr>
+    <tr>
+      <td>"'"</td>
+      <td>'('</td>
+      <td>')'</td>
+      <td>'*'</td>
+      <td>'+'</td>
+      <td>','</td>
+      <td>'-'</td>
+      <td>'.'</td>
+      <td>'/'</td>
+      <td>'0'</td>
+    </tr>
+    <tr>
+      <td>'1'</td>
+      <td>'2'</td>
+      <td>'3'</td>
+      <td>'4'</td>
+      <td>'5'</td>
+      <td>'6'</td>
+      <td>'7'</td>
+      <td>'8'</td>
+      <td>'9'</td>
+      <td>':'</td>
+    </tr>
+    <tr>
+      <td>';'</td>
+      <td>'&lt;'</td>
+      <td>'='</td>
+      <td>'&gt;'</td>
+      <td>'?'</td>
+      <td>'@'</td>
+      <td>'['</td>
+      <td>'\\'</td>
+      <td>']'</td>
+      <td>'^'</td>
+    </tr>
+    <tr>
+      <td>'_'</td>
+      <td>'`'</td>
+      <td>'a'</td>
+      <td>'b'</td>
+      <td>'c'</td>
+      <td>'d'</td>
+      <td>'e'</td>
+      <td>'f'</td>
+      <td>'g'</td>
+      <td>'h'</td>
+    </tr>
+    <tr>
+      <td>'i'</td>
+      <td>'j'</td>
+      <td>'k'</td>
+      <td>'l'</td>
+      <td>'m'</td>
+      <td>'n'</td>
+      <td>'o'</td>
+      <td>'p'</td>
+      <td>'q'</td>
+      <td>'r'</td>
+    </tr>
+    <tr>
+      <td>'s'</td>
+      <td>'t'</td>
+      <td>'u'</td>
+      <td>'v'</td>
+      <td>'w'</td>
+      <td>'x'</td>
+      <td>'y'</td>
+      <td>'z'</td>
+      <td>'{'</td>
+      <td>'|'</td>
+    </tr>
+     </table>
+    <table>
+    <tr>
+      <td>'}'</td>
+      <td>'~'</td>
+      <td>'accept'</td>
+      <td>'add'</td>
+    </tr>
+    <tr>
+      <td>'alt'</td>
+      <td>'altleft'</td>
+      <td>'altright'</td>
+      <td>'apps'</td>
+    </tr>
+    <tr>
+      <td>'backspace'</td>
+      <td>'browserback'</td>
+      <td>'browserfavorites'</td>
+      <td>'browserforward'</td>
+    </tr>
+    <tr>
+      <td>'browserhome'</td>
+      <td>'browserrefresh'</td>
+      <td>'browsersearch'</td>
+      <td>'browserstop'</td>
+    </tr>
+    <tr>
+      <td>'capslock'</td>
+      <td>'clear'</td>
+      <td>'convert'</td>
+      <td>'ctrl'</td>
+    </tr>
+    <tr>
+      <td>'ctrlleft'</td>
+      <td>'ctrlright'</td>
+      <td>'decimal'</td>
+      <td>'del'</td>
+    </tr>
+    <tr>
+      <td>'delete'</td>
+      <td>'divide'</td>
+      <td>'down'</td>
+      <td>'end'</td>
+    </tr>
+    <tr>
+      <td>'enter'</td>
+      <td>'esc'</td>
+      <td>'escape'</td>
+      <td>'execute'</td>
+    </tr>
+    <tr>
+      <td>'f1'</td>
+      <td>'f10'</td>
+      <td>'f11'</td>
+      <td>'f12'</td>
+    </tr>
+    <tr>
+      <td>'f13'</td>
+      <td>'f14'</td>
+      <td>'f15'</td>
+      <td>'f16'</td>
+    </tr>
+    <tr>
+      <td>'f17'</td>
+      <td>'f18'</td>
+      <td>'f19'</td>
+      <td>'f2'</td>
+    </tr>
+    <tr>
+      <td>'f20'</td>
+      <td>'f21'</td>
+      <td>'f22'</td>
+      <td>'f23'</td>
+    </tr>
+    <tr>
+      <td>'f24'</td>
+      <td>'f3'</td>
+      <td>'f4'</td>
+      <td>'f5'</td>
+    </tr>
+    <tr>
+      <td>'f6'</td>
+      <td>'f7'</td>
+      <td>'f8'</td>
+      <td>'f9'</td>
+    </tr>
+    <tr>
+      <td>'final'</td>
+      <td>'fn'</td>
+      <td>'hanguel'</td>
+      <td>'hangul'</td>
+    </tr>
+    <tr>
+      <td>'hanja'</td>
+      <td>'help'</td>
+      <td>'home'</td>
+      <td>'insert'</td>
+    </tr>
+    <tr>
+      <td>'junja'</td>
+      <td>'kana'</td>
+      <td>'kanji'</td>
+      <td>'launchapp1'</td>
+    </tr>
+    <tr>
+      <td>'launchapp2'</td>
+      <td>'launchmail'</td>
+      <td>'launchmediaselect'</td>
+      <td>'left'</td>
+    </tr>
+    <tr>
+      <td>'modechange'</td>
+      <td>'multiply'</td>
+      <td>'nexttrack'</td>
+      <td>'nonconvert'</td>
+    </tr>
+    <tr>
+      <td>'num0'</td>
+      <td>'num1'</td>
+      <td>'num2'</td>
+      <td>'num3'</td>
+    </tr>
+    <tr>
+      <td>'num4'</td>
+      <td>'num5'</td>
+      <td>'num6'</td>
+      <td>'num7'</td>
+    </tr>
+    <tr>
+      <td>'num8'</td>
+      <td>'num9'</td>
+      <td>'numlock'</td>
+      <td>'pagedown'</td>
+    </tr>
+    <tr>
+      <td>'pageup'</td>
+      <td>'pause'</td>
+      <td>'pgdn'</td>
+      <td>'pgup'</td>
+    </tr>
+    <tr>
+      <td>'playpause'</td>
+      <td>'prevtrack'</td>
+      <td>'print'</td>
+      <td>'printscreen'</td>
+    </tr>
+    <tr>
+      <td>'prntscrn'</td>
+      <td>'prtsc'</td>
+      <td>'prtscr'</td>
+      <td>'return'</td>
+    </tr>
+    <tr>
+      <td>'right'</td>
+      <td>'scrolllock'</td>
+      <td>'select'</td>
+      <td>'separator'</td>
+    </tr>
+    <tr>
+      <td>'shift'</td>
+      <td>'shiftleft'</td>
+      <td>'shiftright'</td>
+      <td>'sleep'</td>
+    </tr>
+    <tr>
+      <td>'space'</td>
+      <td>'stop'</td>
+      <td>'subtract'</td>
+      <td>'tab'</td>
+    </tr>
+    <tr>
+      <td>'up'</td>
+      <td>'volumedown'</td>
+      <td>'volumemute'</td>
+      <td>'volumeup'</td>
+    </tr>
+    <tr>
+      <td>'win'</td>
+      <td>'winleft'</td>
+      <td>'winright'</td>
+      <td>'yen'</td>
+    </tr>
+    <tr>
+      <td>'command'</td>
+      <td>'option'</td>
+      <td>'optionleft'</td>
+      <td>'optionright'</td>
+    </tr>
+    </table>
+
+    <p>如果您在使用过程中有任何问题或建议，请随时联系我。</p>
+</body>
+</html>

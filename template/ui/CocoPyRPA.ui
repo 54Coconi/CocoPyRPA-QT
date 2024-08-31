@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="handleWidth">
+          <number>1</number>
+         </property>
+         <property name="childrenCollapsible">
+          <bool>true</bool>
+         </property>
+         <widget class="QFrame" name="frame_list">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>2</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Panel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QListWidget" name="listWidget">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="acceptDrops">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <property name="midLineWidth">
+              <number>0</number>
+             </property>
+             <property name="movement">
+              <enum>QListView::Static</enum>
+             </property>
+             <property name="resizeMode">
+              <enum>QListView::Fixed</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QFrame" name="frame_tableAndLog">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>9</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Panel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QSplitter" name="splitter_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="handleWidth">
+              <number>1</number>
+             </property>
+             <widget class="QFrame" name="frame_table">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>8</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QTableWidget" name="tableWidget">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>微软雅黑</family>
+                   <pointsize>10</pointsize>
+                   <italic>false</italic>
+                  </font>
+                 </property>
+                 <property name="cursor" stdset="0">
+                  <cursorShape>ArrowCursor</cursorShape>
+                 </property>
+                 <property name="acceptDrops">
+                  <bool>true</bool>
+                 </property>
+                 <property name="statusTip">
+                  <string>指令表</string>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>true</bool>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="autoScrollMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="editTriggers">
+                  <set>QAbstractItemView::AllEditTriggers</set>
+                 </property>
+                 <property name="dragEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="showGrid">
+                  <bool>true</bool>
+                 </property>
+                 <property name="gridStyle">
+                  <enum>Qt::SolidLine</enum>
+                 </property>
+                 <property name="sortingEnabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="cornerButtonEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="rowCount">
+                  <number>0</number>
+                 </property>
+                 <property name="columnCount">
+                  <number>0</number>
+                 </property>
+                 <attribute name="horizontalHeaderVisible">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="horizontalHeaderStretchLastSection">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderVisible">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderMinimumSectionSize">
+                  <number>32</number>
+                 </attribute>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QFrame" name="frame_log">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QTextBrowser" name="logBrowser">
+                 <property name="statusTip">
+                  <string>日志区</string>
+                 </property>
+                 <property name="accessibleName">
+                  <string/>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string/>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="readOnly">
+                  <bool>false</bool>
+                 </property>
+                 <property name="searchPaths">
+                  <stringlist/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>859</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_menu_NewDir"/>
+    <addaction name="action_menu_Open"/>
+    <addaction name="action_menu_Save"/>
+    <addaction name="separator"/>
+    <addaction name="action_menu_SaveToExcel"/>
+    <addaction name="action_menu_OpenExcel"/>
+   </widget>
+   <widget class="QMenu" name="menu_operation">
+    <property name="title">
+     <string>操作</string>
+    </property>
+    <widget class="QMenu" name="menu_mouse">
+     <property name="title">
+      <string>鼠标</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../res/icons/mouse.png</normaloff>../../res/icons/mouse.png</iconset>
+     </property>
+     <addaction name="action_menu_LClickOne"/>
+     <addaction name="action_menu_LClickDou"/>
+     <addaction name="action_menu_RClickOne"/>
+     <addaction name="action_menu_Scroll"/>
+     <addaction name="action_menu_MouseMoveTo"/>
+     <addaction name="action_menu_MouseRelMove"/>
+    </widget>
+    <widget class="QMenu" name="menu_os">
+     <property name="title">
+      <string>系统</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../res/icons/os.png</normaloff>../../res/icons/os.png</iconset>
+     </property>
+     <addaction name="action_menu_Delay"/>
+     <addaction name="action_menu_Timing"/>
+    </widget>
+    <widget class="QMenu" name="menu_keyboard">
+     <property name="title">
+      <string>键盘</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../res/icons/keyboard.png</normaloff>../../res/icons/keyboard.png</iconset>
+     </property>
+     <addaction name="action_menu_KeyStroke"/>
+     <addaction name="action_menu_HotkeyCombi"/>
+     <addaction name="action_menu_EntTxtOnKeyboard"/>
+    </widget>
+    <widget class="QMenu" name="menu_cmd">
+     <property name="title">
+      <string>cmd指令</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../res/icons/cmd.png</normaloff>../../res/icons/cmd.png</iconset>
+     </property>
+     <addaction name="action_menu_SelfCmd"/>
+    </widget>
+    <widget class="QMenu" name="menu_other">
+     <property name="title">
+      <string>其它</string>
+     </property>
+     <addaction name="action_menu_Input"/>
+    </widget>
+    <addaction name="menu_mouse"/>
+    <addaction name="menu_keyboard"/>
+    <addaction name="menu_os"/>
+    <addaction name="separator"/>
+    <addaction name="menu_cmd"/>
+    <addaction name="menu_other"/>
+   </widget>
+   <widget class="QMenu" name="menu_run">
+    <property name="title">
+     <string>运行</string>
+    </property>
+    <addaction name="action_menu_RunAll"/>
+    <addaction name="action_menu_RunOne"/>
+   </widget>
+   <widget class="QMenu" name="menu_tool">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_cmdDesc"/>
+    <addaction name="action_about"/>
+    <addaction name="action_menu_checkUpdate"/>
+   </widget>
+   <widget class="QMenu" name="menu_theme">
+    <property name="title">
+     <string>主题</string>
+    </property>
+    <addaction name="action_menu_defaultTheme"/>
+    <addaction name="action_menu_darkTheme"/>
+    <addaction name="action_menu_lightTheme"/>
+    <addaction name="action_menu_protectEyesTheme"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_operation"/>
+   <addaction name="menu_run"/>
+   <addaction name="menu_tool"/>
+   <addaction name="menu_theme"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar_file">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>28</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonFollowStyle</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_RefreshDir"/>
+   <addaction name="action_menu_NewDir"/>
+   <addaction name="action_menu_Open"/>
+   <addaction name="action_menu_Save"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_run">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>28</width>
+     <height>28</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_menu_RunAll"/>
+   <addaction name="action_menu_RunOne"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_funcs">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_menu_LClickOne"/>
+   <addaction name="action_menu_LClickDou"/>
+   <addaction name="action_menu_RClickOne"/>
+   <addaction name="action_menu_Scroll"/>
+   <addaction name="action_menu_MouseMoveTo"/>
+   <addaction name="action_menu_MouseRelMove"/>
+   <addaction name="separator"/>
+   <addaction name="action_menu_KeyStroke"/>
+   <addaction name="action_menu_HotkeyCombi"/>
+   <addaction name="action_menu_EntTxtOnKeyboard"/>
+   <addaction name="separator"/>
+   <addaction name="action_menu_Delay"/>
+   <addaction name="action_menu_Timing"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_operation">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>28</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonFollowStyle</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_tool_Copy"/>
+   <addaction name="action_tool_Paste"/>
+   <addaction name="action_tool_Delete"/>
+   <addaction name="separator"/>
+   <addaction name="action_tool_Add"/>
+   <addaction name="action_tool_InsertUp"/>
+   <addaction name="action_tool_InsertDown"/>
+   <addaction name="action_tool_MoveUp"/>
+   <addaction name="action_tool_MoveDown"/>
+   <addaction name="separator"/>
+   <addaction name="action_tool_screenShot"/>
+  </widget>
+  <action name="action_menu_NewDir">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/new-dir.png</normaloff>../../res/icons/new-dir.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建任务</string>
+   </property>
+   <property name="toolTip">
+    <string>新建任务</string>
+   </property>
+   <property name="statusTip">
+    <string>新建任务目录</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_menu_Open">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/open.png</normaloff>
+     <normalon>C:/Users/Administrator/res/icons/open.png</normalon>../../res/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+   <property name="statusTip">
+    <string>打开任务目录</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_menu_Save">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/save.png</normaloff>
+     <normalon>C:/Users/Administrator/res/icons/save.png</normalon>../../res/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存</string>
+   </property>
+   <property name="statusTip">
+    <string>保存任务配置</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_menu_SaveToExcel">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/save-to-excel.png</normaloff>../../res/icons/save-to-excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为 Excel 表格</string>
+   </property>
+   <property name="toolTip">
+    <string>另存为 Excel 表格</string>
+   </property>
+   <property name="statusTip">
+    <string>将指令配置保存到 Excel 表格</string>
+   </property>
+  </action>
+  <action name="action_menu_OpenExcel">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/excel.png</normaloff>../../res/icons/excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>加载 Excel 数据</string>
+   </property>
+   <property name="toolTip">
+    <string>加载 Excel 数据</string>
+   </property>
+   <property name="statusTip">
+    <string>加载 Excel 指令内容</string>
+   </property>
+  </action>
+  <action name="action_menu_LClickOne">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/click-left.png</normaloff>../../res/icons/click-left.png</iconset>
+   </property>
+   <property name="text">
+    <string>单击左键</string>
+   </property>
+   <property name="toolTip">
+    <string>单击左键</string>
+   </property>
+   <property name="statusTip">
+    <string>模拟鼠标左键单击</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="action_menu_LClickDou">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/click-double.png</normaloff>../../res/icons/click-double.png</iconset>
+   </property>
+   <property name="text">
+    <string>双击左键</string>
+   </property>
+   <property name="toolTip">
+    <string>双击左键</string>
+   </property>
+   <property name="statusTip">
+    <string>模拟鼠标双击左键</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="action_menu_RClickOne">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/click-right.png</normaloff>../../res/icons/click-right.png</iconset>
+   </property>
+   <property name="text">
+    <string>单击右键</string>
+   </property>
+   <property name="toolTip">
+    <string>单击右键</string>
+   </property>
+   <property name="statusTip">
+    <string>模拟鼠标右键单击</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="action_menu_Scroll">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/wheel.png</normaloff>../../res/icons/wheel.png</iconset>
+   </property>
+   <property name="text">
+    <string>滚轮</string>
+   </property>
+   <property name="toolTip">
+    <string>滚轮</string>
+   </property>
+   <property name="statusTip">
+    <string>鼠标滚轮滚动指令,负数上滑，正数下滑，0不滑动</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="action_menu_MouseMoveTo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/mouse-move.png</normaloff>../../res/icons/mouse-move.png</iconset>
+   </property>
+   <property name="text">
+    <string>鼠标定点移动</string>
+   </property>
+   <property name="toolTip">
+    <string>鼠标定点移动</string>
+   </property>
+   <property name="statusTip">
+    <string>鼠标移动到指定的绝对坐标</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+5</string>
+   </property>
+  </action>
+  <action name="action_menu_MouseRelMove">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/mouse-rel-move.png</normaloff>../../res/icons/mouse-rel-move.png</iconset>
+   </property>
+   <property name="text">
+    <string>鼠标相对移动</string>
+   </property>
+   <property name="toolTip">
+    <string>鼠标相对移动</string>
+   </property>
+   <property name="statusTip">
+    <string>鼠标相对当前坐标移动</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+6</string>
+   </property>
+  </action>
+  <action name="action_menu_KeyStroke">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/keystroke.png</normaloff>../../res/icons/keystroke.png</iconset>
+   </property>
+   <property name="text">
+    <string>按键</string>
+   </property>
+   <property name="toolTip">
+    <string>按键</string>
+   </property>
+   <property name="statusTip">
+    <string>模拟键盘【单个按钮】按下和释放（如“enter”、“a”、“F11”等）</string>
+   </property>
+  </action>
+  <action name="action_menu_HotkeyCombi">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/hotkey.png</normaloff>../../res/icons/hotkey.png</iconset>
+   </property>
+   <property name="text">
+    <string>热键组合</string>
+   </property>
+   <property name="toolTip">
+    <string>热键组合</string>
+   </property>
+   <property name="statusTip">
+    <string>热键之间的组合，如（Ctrl+V、win+R等等）</string>
+   </property>
+  </action>
+  <action name="action_menu_EntTxtOnKeyboard">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/txt.png</normaloff>../../res/icons/txt.png</iconset>
+   </property>
+   <property name="text">
+    <string>键盘输入TXT内容</string>
+   </property>
+   <property name="toolTip">
+    <string>键盘输入TXT内容</string>
+   </property>
+   <property name="statusTip">
+    <string>根据txt文本内容【不支持中文内容】依次执行&lt;按键&gt;操作，即模拟连续的按键</string>
+   </property>
+  </action>
+  <action name="action_menu_Delay">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/delay.png</normaloff>../../res/icons/delay.png</iconset>
+   </property>
+   <property name="text">
+    <string>延时</string>
+   </property>
+   <property name="toolTip">
+    <string>延时</string>
+   </property>
+   <property name="statusTip">
+    <string>等待--时间/秒，可以为小数</string>
+   </property>
+  </action>
+  <action name="action_menu_Timing">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/timing.png</normaloff>../../res/icons/timing.png</iconset>
+   </property>
+   <property name="text">
+    <string>定时</string>
+   </property>
+   <property name="toolTip">
+    <string>定时</string>
+   </property>
+   <property name="statusTip">
+    <string>定时到指定时间执行任务</string>
+   </property>
+  </action>
+  <action name="action_menu_Input">
+   <property name="text">
+    <string>（从剪贴板）输入</string>
+   </property>
+   <property name="toolTip">
+    <string>（从剪贴板）输入</string>
+   </property>
+   <property name="statusTip">
+    <string>复制指令中要输入的文本后，从剪贴板粘贴到目标位置</string>
+   </property>
+  </action>
+  <action name="action_menu_RunAll">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/allrun.png</normaloff>../../res/icons/allrun.png</iconset>
+   </property>
+   <property name="text">
+    <string>运行一次</string>
+   </property>
+   <property name="toolTip">
+    <string>运行一次</string>
+   </property>
+   <property name="statusTip">
+    <string>将所有的功能指令从头到尾执行一次</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+F5</string>
+   </property>
+  </action>
+  <action name="action_menu_RunOne">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/run1.png</normaloff>../../res/icons/run1.png</iconset>
+   </property>
+   <property name="text">
+    <string>指定运行</string>
+   </property>
+   <property name="toolTip">
+    <string>指定运行</string>
+   </property>
+   <property name="statusTip">
+    <string>指定一个功能运行一次</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+F6</string>
+   </property>
+  </action>
+  <action name="action_menu_SelfCmd">
+   <property name="text">
+    <string>自定义cmd指令</string>
+   </property>
+   <property name="toolTip">
+    <string>自定义cmd指令</string>
+   </property>
+   <property name="statusTip">
+    <string>自定义cmd指令（保证指令可以在cmd窗口正常执行）</string>
+   </property>
+  </action>
+  <action name="action_RefreshDir">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/refresh.png</normaloff>../../res/icons/refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>刷新任务列表</string>
+   </property>
+   <property name="toolTip">
+    <string>刷新任务列表</string>
+   </property>
+   <property name="statusTip">
+    <string>刷新任务列表的目录</string>
+   </property>
+  </action>
+  <action name="action_tool_Copy">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/copy.png</normaloff>../../res/icons/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="toolTip">
+    <string>复制</string>
+   </property>
+   <property name="statusTip">
+    <string>复制一行指令</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="action_tool_Paste">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/paste.png</normaloff>../../res/icons/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="toolTip">
+    <string>粘贴</string>
+   </property>
+   <property name="statusTip">
+    <string>粘贴一行指令</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+V</string>
+   </property>
+  </action>
+  <action name="action_tool_Delete">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/delete.png</normaloff>../../res/icons/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除</string>
+   </property>
+   <property name="statusTip">
+    <string>删除一行指令</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="action_tool_Add">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/add.png</normaloff>../../res/icons/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>增加</string>
+   </property>
+   <property name="toolTip">
+    <string>增加</string>
+   </property>
+   <property name="statusTip">
+    <string>增加一行指令</string>
+   </property>
+  </action>
+  <action name="action_tool_InsertDown">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/insert-down.png</normaloff>../../res/icons/insert-down.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入下方</string>
+   </property>
+   <property name="toolTip">
+    <string>插入下方</string>
+   </property>
+   <property name="statusTip">
+    <string>在当前选中的指令下方插入一行</string>
+   </property>
+  </action>
+  <action name="action_tool_InsertUp">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/insert-up.png</normaloff>../../res/icons/insert-up.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入上方</string>
+   </property>
+   <property name="statusTip">
+    <string>在当前选中的指令上方插入一行</string>
+   </property>
+  </action>
+  <action name="action_tool_MoveUp">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/up.png</normaloff>../../res/icons/up.png</iconset>
+   </property>
+   <property name="text">
+    <string>上移</string>
+   </property>
+   <property name="statusTip">
+    <string>将当前选中指令上移一行</string>
+   </property>
+   <property name="shortcut">
+    <string>Up</string>
+   </property>
+  </action>
+  <action name="action_tool_MoveDown">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/down.png</normaloff>../../res/icons/down.png</iconset>
+   </property>
+   <property name="text">
+    <string>下移</string>
+   </property>
+   <property name="statusTip">
+    <string>将当前选中指令下移一行</string>
+   </property>
+   <property name="shortcut">
+    <string>Down</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_cmdDesc">
+   <property name="text">
+    <string>功能说明</string>
+   </property>
+  </action>
+  <action name="action_tool_screenShot">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../res/icons/screen_shot.png</normaloff>../../res/icons/screen_shot.png</iconset>
+   </property>
+   <property name="text">
+    <string>截图</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+F4</string>
+   </property>
+  </action>
+  <action name="action_menu_defaultTheme">
+   <property name="text">
+    <string>默认</string>
+   </property>
+   <property name="toolTip">
+    <string>默认主题</string>
+   </property>
+  </action>
+  <action name="action_menu_darkTheme">
+   <property name="text">
+    <string>深色</string>
+   </property>
+   <property name="toolTip">
+    <string>深色主题</string>
+   </property>
+  </action>
+  <action name="action_menu_lightTheme">
+   <property name="text">
+    <string>明亮</string>
+   </property>
+   <property name="toolTip">
+    <string>明亮主题</string>
+   </property>
+  </action>
+  <action name="action_menu_protectEyesTheme">
+   <property name="text">
+    <string>护眼</string>
+   </property>
+   <property name="toolTip">
+    <string>护眼主题</string>
+   </property>
+  </action>
+  <action name="action_menu_checkUpdate">
+   <property name="text">
+    <string>检查更新</string>
+   </property>
+   <property name="toolTip">
+    <string>检查更新</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
