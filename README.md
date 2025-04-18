@@ -2,6 +2,9 @@
 
 # CocoPyRPA-QT
 
+> 注意：现已推出 CocoPyRPA-QT V2.0 全新版本，更多功能，更个性化
+> 项目地址：[Gitee仓库](https://gitee.com/i54Coconi/CocoPyRPA-QT_V2)
+
 基于PyAutoGUI和PyQt5开发的CocoPyRPA的GUI版本，开箱即用，无需任何配置
 
 ### 一、**程序界面预览**
